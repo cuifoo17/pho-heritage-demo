@@ -3,11 +3,8 @@ import { Section, Em, Card, Pill } from "@/components/Section";
 import { Carousel, DishCard } from "@/components/Carousel";
 import { Reviews } from "@/components/Reviews";
 import { info, ratings, reviews } from "@/data/info";
-import menu from "@/data/menu.json";
 import { featuredEntrees, featuredDrinks } from "@/data/featured";
 
-const cocktails = menu.sections.filter((s) => s.title === "Cocktails").flatMap((s) => s.items.filter((it) => it.favorite));
-const drinks = [...featuredDrinks, ...cocktails];
 
 export default function HomePage() {
   return (
@@ -30,7 +27,7 @@ export default function HomePage() {
             ))}
           </Carousel>
           <Carousel title="Drinks">
-            {drinks.map((it) => (
+            {featuredDrinks.map((it) => (
               <DishCard key={it.name} {...it} />
             ))}
           </Carousel>
