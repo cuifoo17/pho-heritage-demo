@@ -9,7 +9,16 @@ const allItems = menu.sections.flatMap((s) => s.items);
 const favorites = (titles: string[]) =>
   menu.sections.filter((s) => titles.includes(s.title)).flatMap((s) => s.items.filter((it) => it.favorite));
 /** Entree carousel, in display order. Names must match menu.json. */
-const entrees = ["Pho Tai", "Vegetarian Eggroll Vermicelli", "Grilled Pork Chop Broken Rice", "Pho Dip", "Lemongrass Smash Burger", "Shaking Beef Tacos"]
+const entrees = [
+  "Pho Tai",
+  "Vegetarian Eggroll Vermicelli",
+  "Grilled Pork Chop Broken Rice",
+  "Wonton Soup",
+  "Meatball Pho",
+  "Pho Dip",
+  "Lemongrass Smash Burger",
+  "Shaking Beef Tacos",
+]
   .map((name) => allItems.find((it) => it.name === name))
   .filter((it) => it !== undefined);
 const cocktails = favorites(["Cocktails"]);

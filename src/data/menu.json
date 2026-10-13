@@ -32,6 +32,25 @@
           "name": "Pho Bo Kho",
           "desc": "Beef stew pho, star anise and lemongrass",
           "price": 19
+        },
+        {
+          "name": "Meatball Pho",
+          "desc": "Pho bo vien: house beef meatballs, onion, cilantro, scallion",
+          "price": 16,
+          "favorite": true,
+          "image": "/dishes/meatball-pho.jpg"
+        }
+      ]
+    },
+    {
+      "title": "Soups",
+      "items": [
+        {
+          "name": "Wonton Soup",
+          "desc": "Pork and shrimp wontons, baby bok choy, fried garlic, clear broth",
+          "price": 14,
+          "favorite": true,
+          "image": "/dishes/wonton-soup.jpg"
         }
       ]
     },
