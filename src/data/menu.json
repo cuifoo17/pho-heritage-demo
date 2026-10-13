@@ -8,8 +8,7 @@
           "name": "Pho Tai",
           "desc": "Rare eye-round, thin-sliced tableside",
           "price": 17,
-          "favorite": true,
-          "image": "/dishes/pho-tai.jpg"
+          "favorite": true
         },
         {
           "name": "Pho Dac Biet",
@@ -32,25 +31,6 @@
           "name": "Pho Bo Kho",
           "desc": "Beef stew pho, star anise and lemongrass",
           "price": 19
-        },
-        {
-          "name": "Meatball Pho",
-          "desc": "Pho bo vien: house beef meatballs, onion, cilantro, scallion",
-          "price": 16,
-          "favorite": true,
-          "image": "/dishes/meatball-pho.jpg"
-        }
-      ]
-    },
-    {
-      "title": "Soups",
-      "items": [
-        {
-          "name": "Wonton Soup",
-          "desc": "Pork and shrimp wontons, baby bok choy, fried garlic, clear broth",
-          "price": 14,
-          "favorite": true,
-          "image": "/dishes/wonton-soup.jpg"
         }
       ]
     },
@@ -86,32 +66,6 @@
       ]
     },
     {
-      "title": "Vermicelli",
-      "note": "Rice noodle bowls with lettuce, herbs, pickled daikon and carrot, crushed peanuts.",
-      "items": [
-        {
-          "name": "Vegetarian Eggroll Vermicelli",
-          "desc": "Crispy tofu and mushroom eggrolls, fresh herbs, vegetarian nuoc cham",
-          "price": 15,
-          "favorite": true,
-          "image": "/dishes/veg-eggroll-vermicelli.jpg"
-        }
-      ]
-    },
-    {
-      "title": "Rice Plates",
-      "note": "Com tam: broken rice with pickled daikon and carrot, cucumber, tomato, scallion oil.",
-      "items": [
-        {
-          "name": "Grilled Pork Chop Broken Rice",
-          "desc": "Lemongrass-marinated pork chop, steamed egg meatloaf, nuoc cham",
-          "price": 17,
-          "favorite": true,
-          "image": "/dishes/pork-chop-broken-rice.jpg"
-        }
-      ]
-    },
-    {
       "title": "Fusion",
       "note": "A few things that aren't traditional. We stand by all of them.",
       "items": [
@@ -137,25 +91,6 @@
           "name": "Coconut Pandan Panna Cotta",
           "desc": "Toasted coconut, palm-sugar caramel",
           "price": 9
-        }
-      ]
-    },
-    {
-      "title": "Drinks",
-      "items": [
-        {
-          "name": "Fresh Coconut Juice",
-          "desc": "Young coconut water with the flesh, over ice",
-          "price": 6,
-          "favorite": true,
-          "image": "/dishes/coconut-juice.jpg"
-        },
-        {
-          "name": "Thai Tea",
-          "desc": "Spiced black tea, condensed milk, over ice",
-          "price": 5,
-          "favorite": true,
-          "image": "/dishes/thai-tea.jpg"
         }
       ]
     },

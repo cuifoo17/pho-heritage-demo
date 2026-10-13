@@ -4,21 +4,10 @@ import { Carousel, DishCard } from "@/components/Carousel";
 import { Reviews } from "@/components/Reviews";
 import { info, ratings, reviews } from "@/data/info";
 import menu from "@/data/menu.json";
+import { featuredEntrees, featuredDrinks } from "@/data/featured";
 
-const allItems = menu.sections.flatMap((s) => s.items);
-const favorites = (titles: string[]) =>
-  menu.sections.filter((s) => titles.includes(s.title)).flatMap((s) => s.items.filter((it) => it.favorite));
-/** Entree carousel, in display order. Names must match menu.json. */
-const entrees = [
-  "Pho Tai",
-  "Vegetarian Eggroll Vermicelli",
-  "Grilled Pork Chop Broken Rice",
-  "Wonton Soup",
-  "Meatball Pho",
-]
-  .map((name) => allItems.find((it) => it.name === name))
-  .filter((it) => it !== undefined);
-const drinks = [...favorites(["Drinks"]), ...favorites(["Cocktails"])];
+const cocktails = menu.sections.filter((s) => s.title === "Cocktails").flatMap((s) => s.items.filter((it) => it.favorite));
+const drinks = [...featuredDrinks, ...cocktails];
 
 export default function HomePage() {
   return (
@@ -36,7 +25,7 @@ export default function HomePage() {
       <Section id="favorites" title={<>Favorites from our <Em>Chef</Em></>}>
         <div className="space-y-14">
           <Carousel title="Entrees">
-            {entrees.map((it) => (
+            {featuredEntrees.map((it) => (
               <DishCard key={it.name} {...it} />
             ))}
           </Carousel>
