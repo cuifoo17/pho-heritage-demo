@@ -1,26 +1,173 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  --color-cream: #fef9ef;
+  --color-sand: #ddd6ca;
+  --color-sand-light: #f1ebdf;
+  --color-terracotta: #b05a36;
+  --color-terracotta-deep: #8f4729;
+  --color-ink: #2a2b2f;
+  --color-ink-soft: #5f5a57;
+  --font-serif: var(--font-instrument), Georgia, serif;
+  --font-sans: var(--font-inter), system-ui, sans-serif;
+  --spacing-safe-bottom: env(safe-area-inset-bottom);
+  --spacing-safe-top: env(safe-area-inset-top);
+  --spacing-touch: 2.75rem;
+  --ease-window: cubic-bezier(0.65, 0, 0.35, 1);
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+html {
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+  -webkit-text-size-adjust: 100%;
+}
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+  overscroll-behavior: none;
+  background: var(--color-cream);
+  color: var(--color-ink);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+/* ---------- the window ---------- */
+.window {
+  --win-w: 72vw;
+  --win-h: 38dvh;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  width: var(--win-w);
+  height: var(--win-h);
+  border-radius: 24px;
+  box-shadow: 0 0 0 200vmax var(--color-cream);
+  z-index: 40;
+  pointer-events: none;
+  animation:
+    window-open 1.8s var(--ease-window) 0.4s forwards,
+    window-hide 0s linear 2.3s forwards;
+}
+@media (min-width: 768px) {
+  .window {
+    --win-w: 42vw;
+    --win-h: 46dvh;
+  }
+}
+/* reached by a page switch: opens at once, faster than first load */
+.window.window-fast {
+  animation-duration: 1.2s, 0s;
+  animation-delay: 0s, 1.2s;
+}
+/* reached from the menu: no window at all, but still closable */
+.window.window-skip {
+  animation: none;
+  visibility: hidden;
+}
+.window.window-closing {
+  animation: window-close 0.7s var(--ease-window) forwards;
+  visibility: visible;
+}
+@keyframes window-open {
+  to {
+    width: 100vw;
+    height: 100dvh;
+    border-radius: 0;
+  }
+}
+@keyframes window-close {
+  from {
+    width: 100vw;
+    height: 100dvh;
+    border-radius: 0;
+  }
+  to {
+    width: var(--win-w);
+    height: var(--win-h);
+    border-radius: 24px;
+  }
+}
+@keyframes window-hide {
+  to {
+    visibility: hidden;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* ---------- reveals after the window ---------- */
+.reveal {
+  opacity: 0;
+  translate: 0 20px;
+  animation: reveal 0.8s ease-out 1.9s forwards;
+}
+[data-nav="window"] .reveal {
+  animation-delay: 1s;
+}
+[data-nav="slide"] .reveal {
+  animation-delay: 0.2s;
+}
+@keyframes reveal {
+  to {
+    opacity: 1;
+    translate: 0 0;
+  }
+}
+
+/* ---------- the menu panel ---------- */
+.menu-panel {
+  min-height: 100dvh;
+  background: var(--color-cream);
+  animation: slide-in 0.5s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+.menu-panel.menu-leaving {
+  animation: slide-out 0.4s cubic-bezier(0.55, 0, 1, 0.45) forwards;
+}
+@keyframes slide-in {
+  from {
+    translate: 100% 0;
+  }
+  to {
+    translate: 0 0;
+  }
+}
+@keyframes slide-out {
+  to {
+    translate: 100% 0;
+  }
+}
+
+/* ---------- scenes ---------- */
+.scene {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 0.6s ease;
+}
+.scene[data-active="true"] {
+  opacity: 1;
+}
+/* while the window is closing, scene swaps are instant */
+[data-instant] .scene {
+  transition: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .window {
+    animation: none;
+    visibility: hidden;
+  }
+  .reveal {
+    animation: none;
+    opacity: 1;
+    translate: 0 0;
+  }
+  .menu-panel,
+  .menu-panel.menu-leaving {
+    animation: none;
+  }
+  .scene {
+    transition: none;
+  }
 }

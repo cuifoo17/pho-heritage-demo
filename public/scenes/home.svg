@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" preserveAspectRatio="xMidYMid slice">
+<style>
+.o{stroke:#2A2B2F;stroke-width:7;stroke-linecap:round;stroke-linejoin:round}
+.t{stroke:#2A2B2F;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;fill:none}
+.steam{fill:none;stroke:#FEF9EF;stroke-width:9;stroke-linecap:round;opacity:.5;transform-box:fill-box;transform-origin:50% 100%;animation:rise 7s ease-in-out infinite}
+.s2{animation-delay:-1.7s}.s3{animation-delay:-3.5s}.s4{animation-delay:-5.2s}
+@keyframes rise{0%{opacity:0;transform:translateY(30px) scaleY(.85)}25%{opacity:.6}70%{opacity:.35}100%{opacity:0;transform:translateY(-70px) scaleY(1.1)}}
+.glow{transform-box:fill-box;transform-origin:center;animation:breathe 8s ease-in-out infinite}
+@keyframes breathe{0%,100%{opacity:.85}50%{opacity:1}}
+@media (prefers-reduced-motion: reduce){*{animation:none !important}}
+</style>
+<defs>
+<radialGradient id="g" cx="50%" cy="50%" r="50%">
+<stop offset="0" stop-color="#D9953B" stop-opacity=".42"/>
+<stop offset=".55" stop-color="#A86A1F" stop-opacity=".14"/>
+<stop offset="1" stop-color="#A86A1F" stop-opacity="0"/>
+</radialGradient>
+</defs>
+<rect width="1920" height="1080" fill="#3B2A22"/>
+<!-- wall panels -->
+<g fill="none" stroke="#2F211B" stroke-width="6" stroke-linecap="round">
+<path d="M220 0 V640 M520 0 V640 M1400 0 V640 M1700 0 V640"/>
+</g>
+<ellipse class="glow" cx="960" cy="480" rx="760" ry="520" fill="url(#g)"/>
+<!-- table -->
+<path d="M-20 668 C400 660 1500 676 1940 664 V1100 H-20 Z" fill="#7A5235"/>
+<path d="M-20 668 C400 660 1500 676 1940 664" class="o" fill="none"/>
+<g fill="none" stroke="#5E3E28" stroke-width="5" stroke-linecap="round">
+<path d="M-20 760 C300 752 700 768 1100 758 S1700 766 1940 756"/>
+<path d="M-20 880 C380 872 820 890 1240 878 S1760 886 1940 876"/>
+<path d="M-20 1000 C420 992 900 1008 1300 998 S1780 1004 1940 996"/>
+<path d="M240 812 C300 806 360 814 410 808 M1500 930 C1560 924 1620 932 1680 926 M760 950 c40 -6 90 4 130 -2"/>
+</g>
+<!-- shadow under bowl -->
+<ellipse cx="972" cy="812" rx="300" ry="46" fill="#5E3E28"/>
+<!-- sauce dish -->
+<ellipse cx="566" cy="812" rx="112" ry="40" fill="#5E3E28"/>
+<path class="o" d="M462 790 C466 822 510 838 566 838 C624 838 668 822 672 790" fill="#DDD6CA"/>
+<ellipse class="o" cx="567" cy="788" rx="106" ry="34" fill="#FEF9EF"/>
+<path d="M486 790 C492 772 530 766 562 768 C560 790 556 806 548 812 C510 810 484 802 486 790Z" fill="#4A2A1E"/>
+<path d="M572 768 C610 768 642 776 648 790 C640 806 606 812 556 812 C566 800 572 786 572 768Z" fill="#C0392B"/>
+<path class="t" d="M560 768 C566 786 560 802 550 812"/>
+<!-- herb plate -->
+<ellipse cx="1336" cy="826" rx="150" ry="44" fill="#5E3E28"/>
+<path class="o" d="M1200 798 C1206 834 1266 852 1342 852 C1418 852 1474 834 1480 798" fill="#DDD6CA"/>
+<ellipse class="o" cx="1340" cy="796" rx="140" ry="40" fill="#FEF9EF"/>
+<g class="t" stroke-width="4">
+<path d="M1290 792 c20 -10 50 -8 70 0 M1300 806 c30 -6 60 -4 86 4 M1318 784 c24 -6 52 -2 70 8" stroke="#F3E6C8" stroke-width="7"/>
+</g>
+<path class="o" stroke-width="5" d="M1250 790 C1262 762 1300 758 1316 772 C1300 792 1270 800 1250 790Z" fill="#5C7A4A"/>
+<path class="o" stroke-width="5" d="M1290 806 C1304 780 1346 778 1360 792 C1342 810 1312 816 1290 806Z" fill="#6E8C58"/>
+<path class="o" stroke-width="5" d="M1396 780 C1410 756 1450 756 1462 772 C1446 790 1414 794 1396 780Z" fill="#5C7A4A"/>
+<path class="o" stroke-width="5" d="M1384 812 C1420 790 1462 798 1468 812 C1440 826 1406 826 1384 812Z" fill="#9AB06A"/>
+<path class="o" stroke-width="5" d="M1440 806 C1452 786 1476 784 1484 800 C1476 812 1456 816 1440 806Z" fill="#C0392B"/>
+<!-- bowl body -->
+<path class="o" d="M636 568 C646 712 772 800 966 800 C1160 800 1286 712 1296 568 Z" fill="#FEF9EF"/>
+<path d="M664 650 C720 720 830 760 966 760 C1100 760 1214 722 1268 650" fill="none" stroke="#B05A36" stroke-width="16" stroke-linecap="round"/>
+<path class="o" d="M870 800 L878 830 C930 842 1000 842 1054 830 L1062 800" fill="#DDD6CA"/>
+<!-- rim -->
+<ellipse class="o" cx="966" cy="566" rx="332" ry="122" fill="#FEF9EF"/>
+<!-- broth -->
+<ellipse cx="966" cy="574" rx="300" ry="100" fill="#D9953B" stroke="#A86A1F" stroke-width="6"/>
+<path d="M720 560 C760 520 880 500 980 506" fill="none" stroke="#F3E6C8" stroke-width="6" stroke-linecap="round" opacity=".5"/>
+<!-- noodles -->
+<g fill="none" stroke="#F3E6C8" stroke-width="9" stroke-linecap="round">
+<path d="M760 600 C800 580 830 620 870 598 S940 620 980 600 S1060 622 1110 598"/>
+<path d="M780 625 C820 606 860 642 900 620 S970 644 1010 622 S1080 640 1130 620"/>
+<path d="M820 648 C860 630 900 662 940 642 S1010 664 1060 644"/>
+<path d="M760 580 C800 560 840 590 880 572"/>
+</g>
+<g fill="none" stroke="#2A2B2F" stroke-width="4" stroke-linecap="round" opacity=".55">
+<path d="M760 610 C800 590 830 630 870 608 M900 632 C940 612 980 650 1010 632"/>
+</g>
+<!-- beef slices -->
+<path class="o" stroke-width="6" d="M1010 520 C1060 500 1140 510 1170 540 C1150 572 1070 580 1020 562 C1000 552 996 532 1010 520Z" fill="#8A4B34"/>
+<path d="M1030 540 C1070 532 1120 536 1150 546" fill="none" stroke="#B97A5A" stroke-width="6" stroke-linecap="round"/>
+<path class="o" stroke-width="6" d="M1060 580 C1110 562 1190 572 1220 600 C1198 632 1120 640 1070 622 C1050 612 1046 592 1060 580Z" fill="#9A5638"/>
+<path d="M1080 600 C1120 592 1170 596 1200 606" fill="none" stroke="#C08866" stroke-width="6" stroke-linecap="round"/>
+<path class="o" stroke-width="6" d="M960 548 C1000 530 1060 540 1080 560 C1062 586 1000 590 966 576 C950 568 948 556 960 548Z" fill="#7E432F"/>
+<!-- herbs on broth -->
+<path class="o" stroke-width="5" d="M800 530 C820 500 870 498 884 516 C864 540 826 546 800 530Z" fill="#5C7A4A"/>
+<path class="o" stroke-width="5" d="M840 556 C870 536 912 544 920 560 C896 576 862 574 840 556Z" fill="#6E8C58"/>
+<path class="t" stroke-width="4" d="M810 530 C836 524 860 520 878 516"/>
+<g class="o" stroke-width="4" fill="#9AB06A">
+<circle cx="760" cy="560" r="10"/><circle cx="1180" cy="640" r="10"/><circle cx="900" cy="590" r="9"/><circle cx="1110" cy="530" r="9"/><circle cx="960" cy="640" r="10"/>
+</g>
+<g fill="#C0392B" class="o" stroke-width="4"><circle cx="1000" cy="610" r="8"/><circle cx="1150" cy="560" r="7"/></g>
+<!-- lime wedge on rim -->
+<g transform="translate(-30 150)">
+<path class="o" d="M1180 494 C1200 450 1262 440 1290 470 C1270 498 1220 510 1180 494Z" fill="#9AB06A"/>
+<path class="o" stroke-width="5" d="M1192 490 C1210 462 1256 456 1276 474" fill="none"/>
+<path class="t" stroke-width="3" d="M1208 482 l10 -14 M1232 476 l4 -16 M1256 476 l-4 -16"/>
+</g>
+<!-- chopsticks -->
+<g stroke-linecap="round">
+<path d="M630 506 L1440 470" stroke="#2A2B2F" stroke-width="24"/>
+<path d="M630 506 L1440 470" stroke="#DDD6CA" stroke-width="11"/>
+<path d="M650 532 L1450 494" stroke="#2A2B2F" stroke-width="24"/>
+<path d="M650 532 L1450 494" stroke="#B05A36" stroke-width="11"/>
+<path d="M630 506 L700 503 M650 532 L720 529" stroke="#A86A1F" stroke-width="11"/>
+</g>
+<!-- steam -->
+<g>
+<path class="steam" d="M800 470 C770 420 830 380 800 330 C770 280 830 240 800 190"/>
+<path class="steam s2" d="M920 440 C890 380 950 340 920 280 C890 220 950 180 920 120"/>
+<path class="steam s3" d="M1040 450 C1010 400 1070 360 1040 300 C1010 240 1070 200 1040 150"/>
+<path class="steam s4" d="M1150 470 C1120 420 1180 390 1150 340 C1120 290 1180 260 1150 210"/>
+</g>
+</svg>

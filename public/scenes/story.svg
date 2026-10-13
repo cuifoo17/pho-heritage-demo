@@ -1,0 +1,122 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" preserveAspectRatio="xMidYMid slice">
+<style>
+.o{stroke:#2A2B2F;stroke-width:7;stroke-linecap:round;stroke-linejoin:round}
+.t{stroke:#2A2B2F;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;fill:none}
+.steam{fill:none;stroke:#FEF9EF;stroke-width:9;stroke-linecap:round;opacity:.5;transform-box:fill-box;transform-origin:50% 100%;animation:rise 6.5s ease-in-out infinite}
+.s2{animation-delay:-2.2s}.s3{animation-delay:-4.3s}
+@keyframes rise{0%{opacity:0;transform:translateY(30px) scaleY(.85)}25%{opacity:.6}70%{opacity:.35}100%{opacity:0;transform:translateY(-70px) scaleY(1.1)}}
+.arm{transform-box:view-box;transform-origin:850px 486px;animation:stir 5s linear infinite}
+@keyframes stir{0%{transform:rotate(0deg) translate(0,0)}25%{transform:rotate(2deg) translate(5px,-3px)}50%{transform:rotate(0deg) translate(0,-6px)}75%{transform:rotate(-2deg) translate(-5px,-3px)}100%{transform:rotate(0deg) translate(0,0)}}
+.ripple{transform-box:fill-box;transform-origin:center;animation:rip 5s ease-in-out infinite}
+@keyframes rip{0%,100%{transform:scale(.9);opacity:.5}50%{transform:scale(1.15);opacity:.9}}
+.flame{transform-box:fill-box;transform-origin:50% 100%;animation:flick 4s ease-in-out infinite}
+@keyframes flick{0%,100%{transform:scaleY(1)}50%{transform:scaleY(.8)}}
+.glow{animation:breathe 7s ease-in-out infinite}
+@keyframes breathe{0%,100%{opacity:.8}50%{opacity:1}}
+@media (prefers-reduced-motion: reduce){*{animation:none !important}}
+</style>
+<defs>
+<radialGradient id="g" cx="50%" cy="50%" r="50%">
+<stop offset="0" stop-color="#D9953B" stop-opacity=".4"/>
+<stop offset=".6" stop-color="#A86A1F" stop-opacity=".12"/>
+<stop offset="1" stop-color="#A86A1F" stop-opacity="0"/>
+</radialGradient>
+</defs>
+<rect width="1920" height="1080" fill="#4A3328"/>
+<!-- backsplash tiles -->
+<rect x="-20" y="560" width="1960" height="210" fill="#573D2F"/>
+<g stroke="#46301F" stroke-width="5" fill="none" stroke-linecap="round">
+<path d="M-20 630 H1940 M-20 700 H1940"/>
+<path d="M60 560 V770 M180 560 V770 M300 560 V770 M420 560 V770 M540 560 V770 M660 560 V770 M780 560 V770 M900 560 V770 M1020 560 V770 M1140 560 V770 M1260 560 V770 M1380 560 V770 M1500 560 V770 M1620 560 V770 M1740 560 V770 M1860 560 V770"/>
+</g>
+<ellipse class="glow" cx="1100" cy="420" rx="760" ry="480" fill="url(#g)"/>
+<!-- window -->
+<rect class="o" x="1190" y="110" width="270" height="290" rx="10" fill="#A86A1F"/>
+<rect x="1206" y="126" width="238" height="258" rx="6" fill="#D9953B"/>
+<circle cx="1380" cy="190" r="34" fill="#F3E6C8" opacity=".75"/>
+<path d="M1206 330 C1260 300 1320 320 1370 296 S1430 300 1444 290 V384 H1206Z" fill="#B05A36" opacity=".6"/>
+<path class="o" d="M1325 110 V400 M1190 255 H1460" fill="none"/>
+<rect class="o" x="1170" y="396" width="310" height="26" rx="6" fill="#DDD6CA"/>
+<!-- sill plant -->
+<path class="o" d="M1400 396 l8 -50 h52 l8 50Z" fill="#B05A36"/>
+<path class="o" stroke-width="5" d="M1432 346 C1410 310 1414 280 1428 262 C1446 290 1446 320 1432 346Z" fill="#5C7A4A"/>
+<path class="o" stroke-width="5" d="M1436 346 C1460 316 1480 304 1500 304 C1494 330 1470 346 1436 346Z" fill="#6E8C58"/>
+<path class="o" stroke-width="5" d="M1428 346 C1404 330 1388 314 1384 296 C1408 296 1424 318 1428 346Z" fill="#6E8C58"/>
+<!-- shelf -->
+<path class="o" d="M420 286 H700" fill="none"/>
+<path class="t" d="M450 286 l20 36 M670 286 l-20 36"/>
+<rect class="o" x="446" y="200" width="54" height="86" rx="10" fill="#F3E6C8"/>
+<rect class="o" x="446" y="196" width="54" height="20" rx="6" fill="#B05A36"/>
+<rect class="o" x="514" y="222" width="44" height="64" rx="10" fill="#D9953B"/>
+<rect class="o" x="514" y="214" width="44" height="16" rx="5" fill="#5C7A4A"/>
+<path class="o" d="M574 286 C574 246 594 236 620 236 C646 236 666 246 666 286Z" fill="#DDD6CA"/>
+<path d="M584 262 H656" stroke="#B05A36" stroke-width="8" stroke-linecap="round"/>
+<!-- pan rail with hanging pans -->
+<path class="o" d="M860 100 H1120" fill="none"/>
+<path class="t" d="M900 100 v24 M1060 100 v24"/>
+<path class="o" d="M900 124 L900 150" fill="none"/>
+<rect class="o" x="888" y="140" width="24" height="70" rx="10" fill="#3B2A22"/>
+<circle class="o" cx="900" cy="260" r="58" fill="#5A4A44"/>
+<circle cx="900" cy="260" r="38" fill="#3B353F"/>
+<rect class="o" x="1048" y="124" width="24" height="60" rx="10" fill="#3B2A22"/>
+<circle class="o" cx="1060" cy="226" r="46" fill="#B05A36"/>
+<circle cx="1060" cy="226" r="28" fill="#8E4A30"/>
+<!-- counter -->
+<rect x="-20" y="770" width="1960" height="320" fill="#6B4A33"/>
+<path class="o" d="M-20 772 C500 766 1400 778 1940 768" fill="none"/>
+<rect x="-20" y="790" width="1960" height="14" fill="#5E3E28"/>
+<g stroke="#5E3E28" stroke-width="6" fill="none" stroke-linecap="round"><path d="M300 830 V1080 M1000 830 V1080 M1600 830 V1080 M1240 860 h80 M560 860 h80"/></g>
+<!-- stove burner -->
+<path class="o" d="M960 772 L976 744 H1290 L1306 772Z" fill="#3B353F"/>
+<g class="flame" fill="#D9953B"><path d="M1010 748 c6 -20 14 -20 20 0Z M1060 748 c6 -24 14 -24 20 0Z M1180 748 c6 -24 14 -24 20 0Z M1232 748 c6 -20 14 -20 20 0Z"/></g>
+<!-- pot -->
+<path class="o" d="M970 560 L978 742 C1040 762 1220 762 1288 742 L1296 560Z" fill="#8C857F"/>
+<path d="M996 600 L1002 720" stroke="#DDD6CA" stroke-width="10" stroke-linecap="round" opacity=".7"/>
+<path class="o" d="M970 610 C940 606 930 620 940 634 L972 636" fill="none"/>
+<path class="o" d="M1296 610 C1326 606 1336 620 1326 634 L1294 636" fill="none"/>
+<ellipse class="o" cx="1133" cy="560" rx="166" ry="44" fill="#A49C94"/>
+<ellipse cx="1133" cy="566" rx="146" ry="32" fill="#A86A1F"/>
+<ellipse cx="1140" cy="570" rx="110" ry="20" fill="#D9953B"/>
+<g fill="none" stroke="#F3E6C8" stroke-width="6" stroke-linecap="round" opacity=".7"><path d="M1040 568 c14 -6 26 -6 40 0 M1190 576 c14 -6 26 -6 40 0"/></g>
+<ellipse class="ripple" cx="1100" cy="574" rx="34" ry="9" fill="none" stroke="#F3E6C8" stroke-width="5"/>
+<!-- woman (back view) -->
+<path class="o" d="M620 690 C610 820 592 960 582 1100 H904 C894 960 878 820 866 690Z" fill="#5C7A4A"/>
+<path d="M700 760 C696 860 690 980 686 1090 M790 760 C796 860 800 980 804 1090" fill="none" stroke="#4A6340" stroke-width="6" stroke-linecap="round"/>
+<!-- left arm hanging -->
+<path class="o" d="M650 482 C612 520 600 600 604 680 C616 692 644 690 652 678 C656 610 664 560 680 520Z" fill="#B05A36"/>
+<ellipse class="o" cx="626" cy="700" rx="22" ry="26" fill="#C98F68"/>
+<!-- stirring arm with ladle -->
+<g class="arm">
+<path d="M1018 512 L1104 594" stroke="#2A2B2F" stroke-width="20" stroke-linecap="round"/>
+<path d="M1018 512 L1104 594" stroke="#A49C94" stroke-width="9" stroke-linecap="round"/>
+<path class="o" d="M800 500 C850 470 912 500 950 534 C980 524 1004 516 1024 518 C1034 530 1030 548 1018 556 C990 566 964 574 944 580 C920 584 906 574 892 560 C866 536 838 520 830 506Z" fill="#B05A36"/>
+<path d="M944 580 C938 560 940 542 950 534" fill="none" stroke="#8E4A30" stroke-width="6" stroke-linecap="round"/>
+<ellipse class="o" cx="1034" cy="530" rx="26" ry="22" fill="#C98F68"/>
+</g>
+<!-- torso -->
+<path class="o" d="M664 470 C700 452 790 452 830 470 C860 486 870 520 864 560 C856 610 856 660 866 700 C800 716 690 716 620 700 C632 650 634 600 628 560 C622 520 636 486 664 470Z" fill="#B05A36"/>
+<path d="M700 500 C716 560 712 640 700 690 M790 500 C776 560 780 640 792 690" fill="none" stroke="#8E4A30" stroke-width="6" stroke-linecap="round"/>
+<!-- apron strings and bow -->
+<path d="M626 682 C700 692 790 692 864 680" fill="none" stroke="#2A2B2F" stroke-width="20" stroke-linecap="round"/>
+<path d="M626 682 C700 692 790 692 864 680" fill="none" stroke="#FEF9EF" stroke-width="9" stroke-linecap="round"/>
+<path class="o" stroke-width="5" d="M744 688 C716 664 700 676 704 694 C708 712 728 702 744 688Z" fill="#FEF9EF"/>
+<path class="o" stroke-width="5" d="M744 688 C772 664 790 676 786 694 C782 712 760 702 744 688Z" fill="#FEF9EF"/>
+<path class="o" stroke-width="5" d="M740 692 L724 744 M750 692 L768 740" fill="none"/>
+<path d="M740 692 L724 744 M750 692 L768 740" stroke="#FEF9EF" stroke-width="3" stroke-linecap="round"/>
+<circle class="o" stroke-width="5" cx="745" cy="690" r="9" fill="#F3E6C8"/>
+<!-- neck and head -->
+<path class="o" d="M722 430 L720 466 C736 474 760 474 774 466 L772 430Z" fill="#C98F68"/>
+<ellipse class="o" cx="746" cy="384" rx="62" ry="68" fill="#DDD6CA"/>
+<path class="o" stroke-width="5" d="M686 400 C682 420 690 436 704 440 M806 400 C810 420 802 436 788 440" fill="none"/>
+<g fill="none" stroke="#A49C94" stroke-width="5" stroke-linecap="round">
+<path d="M716 330 C708 360 704 400 712 432 M746 324 C744 360 744 400 748 440 M776 330 C786 360 788 400 782 432"/>
+</g>
+<circle class="o" cx="746" cy="316" r="36" fill="#DDD6CA"/>
+<path d="M726 306 C738 296 756 296 766 306 M724 326 C740 334 756 334 768 326" fill="none" stroke="#A49C94" stroke-width="5" stroke-linecap="round"/>
+<path d="M704 300 L796 330" stroke="#2A2B2F" stroke-width="14" stroke-linecap="round"/>
+<path d="M704 300 L796 330" stroke="#B05A36" stroke-width="6" stroke-linecap="round"/>
+<!-- steam -->
+<path class="steam" d="M1060 520 C1030 470 1090 430 1060 380 C1030 330 1090 290 1060 240"/>
+<path class="steam s2" d="M1150 510 C1120 450 1180 410 1150 350 C1120 290 1180 250 1150 190"/>
+<path class="steam s3" d="M1240 520 C1210 470 1270 430 1240 380 C1210 330 1270 300 1240 250"/>
+</svg>
