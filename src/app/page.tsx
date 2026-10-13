@@ -15,9 +15,6 @@ const entrees = [
   "Grilled Pork Chop Broken Rice",
   "Wonton Soup",
   "Meatball Pho",
-  "Pho Dip",
-  "Lemongrass Smash Burger",
-  "Shaking Beef Tacos",
 ]
   .map((name) => allItems.find((it) => it.name === name))
   .filter((it) => it !== undefined);
