@@ -141,6 +141,25 @@
       ]
     },
     {
+      "title": "Drinks",
+      "items": [
+        {
+          "name": "Fresh Coconut Juice",
+          "desc": "Young coconut water with the flesh, over ice",
+          "price": 6,
+          "favorite": true,
+          "image": "/dishes/coconut-juice.jpg"
+        },
+        {
+          "name": "Thai Tea",
+          "desc": "Spiced black tea, condensed milk, over ice",
+          "price": 5,
+          "favorite": true,
+          "image": "/dishes/thai-tea.jpg"
+        }
+      ]
+    },
+    {
       "title": "Cocktails",
       "note": "Curated, not long. Ask for the off-menu list.",
       "items": [

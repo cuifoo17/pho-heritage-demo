@@ -18,7 +18,7 @@ const entrees = [
 ]
   .map((name) => allItems.find((it) => it.name === name))
   .filter((it) => it !== undefined);
-const cocktails = favorites(["Cocktails"]);
+const drinks = [...favorites(["Drinks"]), ...favorites(["Cocktails"])];
 
 export default function HomePage() {
   return (
@@ -40,8 +40,8 @@ export default function HomePage() {
               <DishCard key={it.name} {...it} />
             ))}
           </Carousel>
-          <Carousel title="Cocktails">
-            {cocktails.map((it) => (
+          <Carousel title="Drinks">
+            {drinks.map((it) => (
               <DishCard key={it.name} {...it} />
             ))}
           </Carousel>
